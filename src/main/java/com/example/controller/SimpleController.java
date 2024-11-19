@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 class SimpleController {
 
+    public String str = "";
+
     @Value("${DEVOPS}")
     private String devopsVariable;
 
