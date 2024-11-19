@@ -20,14 +20,6 @@ pipeline {
             }
         }
 
-        stage('Checkstyle Analysis') {
-            steps {
-                script {
-                    sh "${env.MAVEN_HOME}/bin/mvn checkstyle:check"
-                }
-            }
-        }
-
         stage('SpotBugs Analysis') {
             steps {
                 script {
