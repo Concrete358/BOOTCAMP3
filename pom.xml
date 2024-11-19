@@ -52,6 +52,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>3.3.0</version>
 				<configuration>
 					<configLocation>google_checks.xml</configLocation> <!-- Define your Checkstyle config -->
 				</configuration>
@@ -68,9 +69,10 @@
 			<plugin>
 				<groupId>com.github.spotbugs</groupId>
 				<artifactId>spotbugs-maven-plugin</artifactId>
+				<version>4.8.6.5</version>
 				<configuration>
-					<effort>Max</effort> <!-- Can be Min, Default, or Max -->
-					<threshold>Low</threshold> <!-- Priority: High, Medium, Low -->
+					<effort>Min</effort> <!-- Can be Min, Default, or Max -->
+					<threshold>High</threshold> <!-- Priority: High, Medium, Low -->
 				</configuration>
 				<executions>
 					<execution>
@@ -85,6 +87,7 @@
 			<plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
+				<version>11.0.0</version>
 				<executions>
 					<execution>
 						<phase>verify</phase>
